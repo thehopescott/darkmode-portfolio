@@ -150,6 +150,35 @@ section#hero {
           align-items: center;
 }
 
+.sass-art,
+.js-art,
+.figma-art,
+.dot-one,
+.dot-two {
+  position: absolute;
+  background: #25262a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  z-index: 5;
+}
+
+.sass-art img,
+.js-art img,
+.figma-art img,
+.dot-one img,
+.dot-two img {
+  width: 5rem;
+  height: 5rem;
+}
+
 .dot-one {
   background: #0faf6c;
   width: 1rem;
@@ -168,30 +197,6 @@ section#hero {
   position: absolute;
   top: 20rem;
   right: 25rem;
-}
-
-.sass-art,
-.js-art,
-.figma-art {
-  position: absolute;
-  background: #25262a;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 50%;
-}
-
-.sass-art img,
-.js-art img,
-.figma-art img {
-  width: 5rem;
-  height: 5rem;
 }
 
 .sass-art {

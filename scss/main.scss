@@ -125,6 +125,25 @@ section#hero {
     align-items: center;
 }
 
+.sass-art,
+.js-art,
+.figma-art,
+.dot-one,
+.dot-two {
+    position: absolute;
+    background: #25262a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    z-index: 5;
+
+    img {
+        width: 5rem;
+        height: 5rem;
+    }
+}
+
 .dot-one {
     background: rgb(15, 175, 108);
     width: 1rem;
@@ -142,22 +161,6 @@ section#hero {
     position: absolute;
     top: 20rem;
     right: 25rem;
-}
-
-.sass-art,
-.js-art,
-.figma-art {
-    position: absolute;
-    background: #25262a;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-
-    img {
-        width: 5rem;
-        height: 5rem;
-    }
 }
 
 .sass-art {
