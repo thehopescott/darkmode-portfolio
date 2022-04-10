@@ -417,6 +417,15 @@ section#projects {
   padding-top: 5rem;
 }
 
+section#projects .aesth-img {
+  position: absolute;
+  width: 10rem;
+  height: auto;
+  z-index: -1;
+  top: 20rem;
+  right: 10rem;
+}
+
 section#projects .projects-intro {
   width: 80%;
   margin: 0 auto;

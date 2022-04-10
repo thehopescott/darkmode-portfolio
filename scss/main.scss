@@ -350,6 +350,15 @@ section#projects {
     height: 80vh;
     padding-top: 5rem;
 
+    .aesth-img {
+        position: absolute;
+        width: 10rem;
+        height: auto;
+        z-index: -1;
+        top: 20rem;
+        right: 10rem;
+    }
+
     .projects-intro {
         width: 80%;
         margin: 0 auto;
