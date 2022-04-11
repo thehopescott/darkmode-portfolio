@@ -265,6 +265,7 @@ section#about {
     margin: auto;
     align-items: center;
     justify-content: space-between;
+    animation: fadeIn 1.5s ease-in;
 
     .my-skills {
         list-style: none;
@@ -341,7 +342,16 @@ section#about {
         }
     }
 }
-
+@keyframes fadeIn {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
 section#projects {
     display: none;
     flex-direction: column;
@@ -349,6 +359,7 @@ section#projects {
     margin: auto;
     height: 80vh;
     padding-top: 5rem;
+    overflow: hidden;
 
     .aesth-img {
         position: absolute;
@@ -380,6 +391,8 @@ section#projects {
         list-style: none;
         margin-top: 4rem;
         width: 100%;
+        transform: translateX(120%);
+        animation: slideInRight 2s ease-in-out forwards;
 
         .project {
             position: relative;
@@ -460,11 +473,23 @@ section#projects {
     }
 }
 
+@keyframes slideInRight {
+    from {
+        transform: translateX(120%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
 section#contact {
     display: none;
     width: 70%;
     margin: auto;
     height: 80vh;
+    animation: revealIn 1s ease-in;
 
     .contact-container {
         display: flex;
@@ -583,6 +608,16 @@ section#contact {
         .emoji {
             font-size: 3rem;
         }
+    }
+}
+@keyframes revealIn {
+    from {
+        width: 0;
+        opacity: 0;
+    }
+    to {
+        width: 80%;
+        opacity: 1;
     }
 }
 
