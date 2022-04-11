@@ -543,6 +543,143 @@ section#contact {
   display: none;
   width: 70%;
   margin: auto;
+  height: 80vh;
+}
+
+section#contact .contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  margin-top: 6rem;
+}
+
+section#contact .contact-container .contact-intro {
+  width: 40%;
+}
+
+section#contact .contact-container .contact-intro .contact-title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+section#contact .contact-container .contact-intro p {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+section#contact .contact-container .contact-intro .send-email {
+  display: block;
+  margin-top: 5rem;
+  color: #0faf6c;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+section#contact .contact-container .contact-intro .send-email i {
+  font-size: 2rem;
+}
+
+section#contact .contact-container .contact-form {
+  width: 40%;
+  margin-bottom: 0;
+}
+
+section#contact .contact-container .contact-form .form-title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+section#contact .contact-container .contact-form .form-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 2rem;
+}
+
+section#contact .contact-container .contact-form .form-control label {
+  font-size: 1.5rem;
+}
+
+section#contact .contact-container .contact-form .form-control input {
+  background: transparent;
+  border: none;
+  border-bottom: 0.1rem solid #2d2f33;
+  padding: 0.5rem;
+  color: #0faf6c;
+  width: 90%;
+}
+
+section#contact .contact-container .contact-form .form-control input:focus {
+  outline: none;
+}
+
+section#contact .contact-container .contact-form .form-control input:valid {
+  background: transparent;
+}
+
+section#contact .contact-container .contact-form .message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+}
+
+section#contact .contact-container .contact-form .message textarea {
+  background: transparent;
+  color: #0faf6c;
+  border: none;
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  border-bottom: 0.1rem solid #2d2f33;
+  padding: 0.5rem;
+}
+
+section#contact .contact-container .contact-form .message textarea:focus {
+  outline: none;
+}
+
+section#contact .contact-container .contact-form .message textarea:valid {
+  background: transparent;
+}
+
+section#contact .contact-container .contact-form .message button {
+  background: transparent;
+  color: #0faf6c;
+  border: none;
+  cursor: pointer;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-top: 2rem;
+}
+
+section#contact .contact-container .contact-form .message button i {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+section#contact .farewell {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+section#contact .farewell .emoji {
+  font-size: 3rem;
 }
 
 footer {

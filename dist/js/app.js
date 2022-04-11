@@ -53,8 +53,8 @@ navLinks.forEach(
                 document.querySelector("#hero").style.display = "none";
                 document.querySelector("#about").style.display = "none";
                 document.querySelector("#projects").style.display = "none";
-                document.querySelector("#contact").style.display = "flex";
-                document.querySelector("body").style.background = "#2d2f33";
+                document.querySelector("#contact").style.display = "block";
+                document.querySelector("body").style.background = "#25262a";
             }
         })
 );

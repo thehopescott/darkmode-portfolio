@@ -463,6 +463,126 @@ section#contact {
     display: none;
     width: 70%;
     margin: auto;
+    height: 80vh;
+
+    .contact-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        margin-top: 6rem;
+
+        .contact-intro {
+            width: 40%;
+
+            .contact-title {
+                font-size: 2.5rem;
+                font-weight: 400;
+                margin-bottom: 2rem;
+            }
+
+            p {
+                font-size: 1.3rem;
+                font-weight: 300;
+            }
+
+            .send-email {
+                display: block;
+                margin-top: 5rem;
+                color: rgb(15, 175, 108);
+                text-decoration: underline;
+                font-weight: bold;
+                font-size: 1.4rem;
+
+                i {
+                    font-size: 2rem;
+                }
+            }
+        }
+
+        .contact-form {
+            width: 40%;
+            margin-bottom: 0;
+
+            .form-title {
+                font-size: 2.5rem;
+                font-weight: 400;
+                margin-bottom: 2rem;
+            }
+
+            .form-control {
+                display: flex;
+                flex-direction: column;
+                margin-top: 2rem;
+
+                label {
+                    font-size: 1.5rem;
+                }
+
+                input {
+                    background: transparent;
+                    border: none;
+                    border-bottom: 0.1rem solid #2d2f33;
+                    padding: 0.5rem;
+                    color: #0faf6c;
+                    width: 90%;
+
+                    &:focus {
+                        outline: none;
+                    }
+
+                    &:valid {
+                        background: transparent;
+                    }
+                }
+            }
+
+            .message {
+                display: flex;
+                width: 90%;
+
+                textarea {
+                    background: transparent;
+                    color: #0faf6c;
+                    border: none;
+                    width: 100%;
+                    height: max-content;
+                    border-bottom: 0.1rem solid #2d2f33;
+                    padding: 0.5rem;
+
+                    &:focus {
+                        outline: none;
+                    }
+
+                    &:valid {
+                        background: transparent;
+                    }
+                }
+
+                button {
+                    background: transparent;
+                    color: rgb(15, 175, 108);
+                    border: none;
+                    cursor: pointer;
+                    width: max-content;
+                    margin-top: 2rem;
+
+                    i {
+                        font-weight: bold;
+                        font-size: 3rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .farewell {
+        text-align: center;
+        margin-top: 3rem;
+
+        .emoji {
+            font-size: 3rem;
+        }
+    }
 }
 
 footer {
