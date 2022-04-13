@@ -489,7 +489,6 @@ section#contact {
     width: 70%;
     margin: auto;
     height: 80vh;
-    animation: revealIn 1s ease-in;
 
     .contact-container {
         display: flex;
@@ -608,16 +607,6 @@ section#contact {
         .emoji {
             font-size: 3rem;
         }
-    }
-}
-@keyframes revealIn {
-    from {
-        width: 0;
-        opacity: 0;
-    }
-    to {
-        width: 80%;
-        opacity: 1;
     }
 }
 

@@ -599,8 +599,6 @@ section#contact {
   width: 70%;
   margin: auto;
   height: 80vh;
-  -webkit-animation: revealIn 1s ease-in;
-          animation: revealIn 1s ease-in;
 }
 
 section#contact .contact-container {
@@ -737,28 +735,6 @@ section#contact .farewell {
 
 section#contact .farewell .emoji {
   font-size: 3rem;
-}
-
-@-webkit-keyframes revealIn {
-  from {
-    width: 0;
-    opacity: 0;
-  }
-  to {
-    width: 80%;
-    opacity: 1;
-  }
-}
-
-@keyframes revealIn {
-  from {
-    width: 0;
-    opacity: 0;
-  }
-  to {
-    width: 80%;
-    opacity: 1;
-  }
 }
 
 footer {
