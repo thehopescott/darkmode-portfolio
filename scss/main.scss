@@ -627,6 +627,273 @@ footer {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+    header {
+        width: 100%;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+
+        .open-menu {
+            display: block;
+            width: 4rem;
+            height: auto;
+        }
+        .menu-toggle {
+            transform: translateX(0%);
+        }
+
+        nav {
+            width: 50%;
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 100vh;
+            border-top: 0.2rem solid rgb(15, 175, 108);
+            background: #25262a;
+            transform: translateX(100%);
+            transition: transform 1s ease-in-out;
+            z-index: 999;
+
+            .current {
+                &::after {
+                    content: "";
+                }
+            }
+
+            .close-menu {
+                display: block;
+                position: absolute;
+                top: 2rem;
+                right: 2rem;
+                width: 3rem;
+                height: 3rem;
+            }
+
+            ul {
+                display: block;
+                margin-top: 8rem;
+                margin-left: 2rem;
+
+                a {
+                    text-transform: uppercase;
+                    display: block;
+                    margin: 1rem 0;
+
+                    &:hover {
+                        &::after {
+                            content: "";
+                        }
+                    }
+                }
+            }
+        }
+    }
+    section#hero {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+        text-align: center;
+
+        .sass-art,
+        .js-art,
+        .figma-art,
+        .dot-one,
+        .dot-two {
+            z-index: -1;
+            img {
+                width: 3rem;
+                height: 3rem;
+            }
+        }
+
+        .dot-one {
+            width: 2rem;
+            height: 2rem;
+            bottom: 2rem;
+            right: 5rem;
+        }
+        .dot-two {
+            width: 4rem;
+            height: 4rem;
+            top: 20%;
+            right: 10rem;
+        }
+
+        .sass-art {
+            top: 23rem;
+            right: 28rem;
+            width: 6rem;
+            height: 6rem;
+
+            img {
+                width: 3rem;
+                height: 3rem;
+            }
+        }
+
+        .js-art {
+            bottom: 6rem;
+            right: 6rem;
+            width: 7rem;
+            height: 7rem;
+            img {
+                width: 5rem;
+                height: 5rem;
+            }
+        }
+
+        .figma-art {
+            bottom: 15rem;
+            right: 25rem;
+            width: 8rem;
+            height: 8rem;
+        }
+
+        .hero-shape {
+            display: none;
+        }
+
+        .subheading {
+            margin: auto;
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            width: 100%;
+        }
+
+        .hero-desc {
+            width: 100%;
+        }
+
+        .hero-cta {
+            display: block;
+            margin: auto;
+            font-size: 2rem;
+            margin-top: 3rem;
+        }
+
+        .social-links {
+            margin: auto;
+            margin-top: 5rem;
+            width: 60%;
+        }
+    }
+    section#about {
+        flex-direction: column-reverse;
+        width: 100%;
+        margin: auto;
+        height: auto;
+        padding: 2rem;
+        animation: none;
+
+        .expanded-info {
+            width: 100%;
+            margin-bottom: 3rem;
+
+            .subheading {
+                margin-bottom: 2rem;
+                color: #0faf6c;
+            }
+        }
+
+        .my-skills {
+            width: 100%;
+        }
+    }
+    section#projects {
+        padding: 2rem;
+        width: 100%;
+        overflow: hidden;
+        height: auto;
+
+        .aesth-img {
+            display: none;
+        }
+
+        .projects-intro {
+            width: 100%;
+        }
+
+        .projects-list {
+            display: flex;
+            flex-direction: column;
+            margin-top: 3rem;
+            width: 100%;
+            transform: translateX(0%);
+            animation: none;
+
+            .project {
+                width: 100%;
+                margin-bottom: 2rem;
+            }
+        }
+
+        .more-projects-cta {
+            margin-top: 2rem;
+        }
+    }
+    section#contact {
+        display: none;
+        width: 100%;
+        padding: 2rem;
+        height: auto;
+
+        .contact-container {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2rem;
+
+            .contact-intro {
+                width: 100%;
+
+                .send-email {
+                    margin-top: 2rem;
+                }
+            }
+
+            .contact-form {
+                width: 100%;
+                margin-top: 4rem;
+
+                .form-control {
+                    label {
+                        margin-bottom: 0.5rem;
+                    }
+
+                    input {
+                        width: 100%;
+                    }
+                }
+
+                .message {
+                    width: 100%;
+
+                    button {
+                        i {
+                            font-size: 4rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .farewell {
+            text-align: center;
+            margin-top: 2rem;
+
+            .emoji {
+                font-size: 3rem;
+            }
+        }
+    }
+    footer {
+        height: 10vh;
+        position: unset;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

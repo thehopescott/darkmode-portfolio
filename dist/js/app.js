@@ -5,6 +5,7 @@ const closeNav = document.querySelector(".close-menu");
 
 openNav.addEventListener("click", () => {
     nav.classList.add("menu-toggle");
+    nav.style.transform = "translateX(0%);";
 });
 closeNav.addEventListener("click", () => {
     nav.classList.remove("menu-toggle");
@@ -28,8 +29,9 @@ navLinks.forEach(
             navLinks.forEach((c) =>
                 c.classList[e.target == c ? "toggle" : "remove"](current)
             );
+
             let containerId = e.target.textContent;
-            containerId = containerId.toLocaleLowerCase();
+            containerId = containerId.toLowerCase();
 
             if (containerId === "home") {
                 document.querySelector("#hero").style.display = "flex";
